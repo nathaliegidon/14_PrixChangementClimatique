@@ -1,0 +1,9 @@
+models:
+  - name: ccr_details
+    columns:
+      - name: cod_commune
+        data_type: varchar
+      - name: lib_commune
+        data_type: varchar
+      - name: dat_publi_dicrim
+        data_type: timestamp

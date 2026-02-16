@@ -1,0 +1,122 @@
+models:
+  - name: pprm_gaspar
+    description: |-
+      1. Définition - 
+      Le plan de prévention des risques miniers est un document réalisé par l’État qui réglemente l'utilisation des sols en fonction des risques naturels auxquels ils sont soumis. Cette réglementation va de l'interdiction de construire à la possibilité de construire sous certaines conditions.
+
+      2. Structure
+      Chaque procédure est décrite par une ligne par commune et par risque traité. La table comprend les procédures en vigueur, les procédures en cours, les procédures annulées, abrogées et déprescrites, ainsi que les procédures révisées par une autre procédure.
+
+      3. Dictionnaire de données -  https://www.georisques.gouv.fr/sites/default/files/Georisques_DictionnaireDonneesGaspar_1.0.pdf
+    columns:
+      - name: CODE MODELE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE MODELE
+        data_type: varchar
+        quote: true
+      - name: CODE PROECEDURE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE PROCEDURE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE ORGANISME
+        data_type: varchar
+        quote: true
+      - name: BASSIN RISQUE
+        data_type: varchar
+        quote: true
+      - name: BASSINS HYDROGRAPHIQUES
+        data_type: varchar
+        quote: true
+      - name: COURS EAU
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE REGION
+        data_type: bigint
+        quote: true
+      - name: NOM REGION
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE DEPARTEMENT
+        data_type: varchar
+        quote: true
+      - name: NOM DEPARTEMENT
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE COMMUNE
+        data_type: varchar
+        quote: true
+      - name: NOM COMMUNE
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 1
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 1
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 2
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 2
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 2_1
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 3
+        data_type: varchar
+        quote: true
+      - name: PROCEDURE REVISANTE
+        data_type: varchar
+        quote: true
+      - name: CODES REVISES
+        data_type: varchar
+        quote: true
+      - name: PROCEDURE REVISEE
+        data_type: varchar
+        quote: true
+      - name: CODES REVISANTS
+        data_type: varchar
+        quote: true
+      - name: PRESCRIPTION
+        data_type: date
+        quote: true
+      - name: ENQUETE_PUBL_DEBUT
+        data_type: date
+        quote: true
+      - name: ENQUETE_PUBL_FIN
+        data_type: date
+        quote: true
+      - name: ANNEX_PLU
+        data_type: date
+        quote: true
+      - name: DEPRESCRIPTION
+        data_type: varchar
+        quote: true
+      - name: APPROBATION
+        data_type: date
+        quote: true
+      - name: ANNULATION
+        data_type: date
+        quote: true
+      - name: ABROGATION
+        data_type: date
+        quote: true
+      - name: LIBELLE ETAT
+        data_type: varchar
+        quote: true
+      - name: DATE ETAT
+        data_type: date
+        quote: true
+      - name: LIBELLE SOUS-ETAT
+        data_type: varchar
+        quote: true
+      - name: DATE SOUS-ETAT
+        data_type: date
+        quote: true
+      - name: DATE DERNIERE MISE A JOUR
+        data_type: date
+        quote: true

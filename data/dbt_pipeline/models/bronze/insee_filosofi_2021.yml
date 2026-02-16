@@ -2,16 +2,11 @@ version: 2
 
 models:
   - name: insee_filosofi_2021
-    description: >
-      Données INSEE
-      Principaux indicateurs sur la pauvreté en 2021 : 
-      niveau de vie, taux de pauvreté, part des ménages imposés et décomposition du revenu disponible
-      Sous-titre : Revenus localisés sociaux et fiscaux (Filosofi)
-      Identifiant du jeu de données : DS_FILOSOFI_CC
-      https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_FILOSOFI_CC
+    description: >-
+      Données INSEE Principaux indicateurs sur la pauvreté en 2021 :  niveau de vie, taux de pauvreté, part des ménages imposés et décomposition du revenu disponible Sous-titre : Revenus localisés sociaux et fiscaux (Filosofi) Identifiant du jeu de données : DS_FILOSOFI_CC https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_FILOSOFI_CC
     persist_docs:
-      relation: true 
-      columns: true 
+      relation: true
+      columns: true
 
     columns:
       - name: geo
@@ -24,9 +19,8 @@ models:
         description: "Mesures filosofi  - voir les metadonnes https://catalogue-donnees.insee.fr/fr/catalogue/recherche/DS_FILOSOFI_CC"
         type: STRING
       - name: unit_measure
-        description: >
-          Unité de mesure : 
-          PT pour pourcentage, EUR_YR pour Euros par an, _Z pour nombre et PS pour personnes
+        description: >-
+          Unité de mesure :  PT pour pourcentage, EUR_YR pour Euros par an, _Z pour nombre et PS pour personnes
         type: STRING
       - name: unit_mult
         description: "Quantité d'unités (en puissance de 10)"
@@ -43,3 +37,5 @@ models:
       - name: obs_value
         description: "Valeur numérique"
         type: FLOAT
+        data_tests:
+          - not_null

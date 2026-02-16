@@ -1,0 +1,191 @@
+models:
+  - name: pprn_gaspar
+    description: |-
+      1. Définition -
+      Le plan de prévention des risques naturels est un document réalisé par l’État qui réglemente l'utilisation des sols en fonction des risques naturels auxquels ils sont soumis. Cette réglementation va de l'interdiction de construire à la possibilité de construire sous certaines
+      conditions.
+      http://www.georisques.gouv.fr/articles/les-plans-de-prevention-des-risques-naturels-pprn
+
+      2. Structure - 
+      Chaque procédure est décrite par une ligne par commune et par risque traité. La table comprend les procédures en vigueur, les procédures en cours, les procédures annulées, abrogées et déprescrites, ainsi que les procédures révisées par une autre procédure.
+
+      3. Dictionnaire de données -
+
+    columns:
+      - name: CODE MODELE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE MODELE
+        data_type: varchar
+        quote: true
+      - name: CODE PROECEDURE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE PROCEDURE
+        data_type: varchar
+        quote: true
+      - name: LIBELLE ORGANISME
+        data_type: varchar
+        quote: true
+      - name: BASSIN RISQUE
+        data_type: varchar
+        quote: true
+      - name: BASSINS HYDROGRAPHIQUES
+        data_type: varchar
+        quote: true
+      - name: COURS EAU
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE REGION
+        data_type: varchar
+        quote: true
+      - name: NOM REGION
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE DEPARTEMENT
+        data_type: varchar
+        quote: true
+      - name: NOM DEPARTEMENT
+        data_type: varchar
+        quote: true
+      - name: CODE INSEE COMMUNE
+        data_type: varchar
+        quote: true
+      - name: NOM COMMUNE
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 1
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 1
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 2
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 2
+        data_type: varchar
+        quote: true
+      - name: CODE RISQUE 2_1
+        data_type: bigint
+        quote: true
+      - name: LIBELLE RISQUE 3
+        data_type: varchar
+        quote: true
+      - name: PROCEDURE REVISANTE
+        data_type: varchar
+        quote: true
+      - name: CODES REVISES
+        data_type: varchar
+        quote: true
+      - name: PROCEDURE REVISEE
+        data_type: varchar
+        quote: true
+      - name: CODES REVISANTS
+        data_type: varchar
+        quote: true
+      - name: PROGRAMMATION_DEBUT
+        data_type: date
+        quote: true
+      - name: PROGRAMMATION_FIN
+        data_type: date
+        quote: true
+      - name: MONTAGE_DEBUT
+        data_type: date
+        quote: true
+      - name: MONTAGE_FIN
+        data_type: date
+        quote: true
+      - name: PRESCRIPTION
+        data_type: varchar
+        quote: true
+      - name: ETUDES_HYDR_DEBUT
+        data_type: date
+        quote: true
+      - name: ETUDES_HYDR_FIN
+        data_type: date
+        quote: true
+      - name: CARTE_ALEAS_DEBUT
+        data_type: date
+        quote: true
+      - name: CARTE_ALEAS_FIN
+        data_type: date
+        quote: true
+      - name: CARTE_ENJEUX_DEBUT
+        data_type: date
+        quote: true
+      - name: CARTE_ENJEUX_FIN
+        data_type: date
+        quote: true
+      - name: ZONAGE_REGL_DEBUT
+        data_type: date
+        quote: true
+      - name: ZONAGE_REGL_FIN
+        data_type: date
+        quote: true
+      - name: REG_ET_NOTE_PRES_DEBUT
+        data_type: varchar
+        quote: true
+      - name: REG_ET_NOTE_PRES_FIN
+        data_type: varchar
+        quote: true
+      - name: CONCERTATION_DEBUT
+        data_type: date
+        quote: true
+      - name: CONCERTATION_FIN
+        data_type: date
+        quote: true
+      - name: CONSULTATION_DEBUT
+        data_type: timestamp
+        quote: true
+      - name: CONSULTATION_FIN
+        data_type: timestamp
+        quote: true
+      - name: CONSULT_SERV_DEBUT
+        data_type: date
+        quote: true
+      - name: CONSULT_SERV_FIN
+        data_type: date
+        quote: true
+      - name: ENQUETE_PUBL_DEBUT
+        data_type: timestamp
+        quote: true
+      - name: ENQUETE_PUBL_FIN
+        data_type: timestamp
+        quote: true
+      - name: ANNEX_PLU
+        data_type: date
+        quote: true
+      - name: PROROGATION
+        data_type: varchar
+        quote: true
+      - name: APPLIC_ANTIC
+        data_type: date
+        quote: true
+      - name: DEPRESCRIPTION
+        data_type: date
+        quote: true
+      - name: APPROBATION
+        data_type: timestamp
+        quote: true
+      - name: ANNULATION
+        data_type: date
+        quote: true
+      - name: ABROGATION
+        data_type: date
+        quote: true
+      - name: LIBELLE ETAT
+        data_type: varchar
+        quote: true
+      - name: DATE ETAT
+        data_type: date
+        quote: true
+      - name: LIBELLE SOUS-ETAT
+        data_type: varchar
+        quote: true
+      - name: DATE SOUS-ETAT
+        data_type: date
+        quote: true
+      - name: DATE DERNIERE MISE A JOUR
+        data_type: timestamp
+        quote: true
